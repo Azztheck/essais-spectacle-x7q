@@ -1,35 +1,133 @@
 {
- "best_of_pour_Yan": {"titre": "Best of : 10 effets", "texte": "Les essais les plus réussis à la suite."},
- "mini_scene_enchainee": {"titre": "Mini scène enchaînée", "texte": "Même passage filmé : fumée noire, feu, spectre blanc, couleurs, en fondus (chaque morceau repart du même instant de la prise)."},
- "G01_ombre_fumee_volume": {"titre": "Ombre qui se transforme en fumée noire", "texte": "Sur la vraie silhouette (vidéo source). La fumée sort du contour et suit les mouvements ; rien n'est projeté sur l'ombre elle-même."},
- "G02_feu_des_LED": {"titre": "Feu qui sort des LED", "texte": "Les LED rouges des gants sont repérées automatiquement dans la vidéo ; le feu et les braises partent des mains."},
- "G03_embrasement": {"titre": "Embrasement", "texte": "Flammes au sol, le fond s'allume, la fumée chaude monte."},
- "G04_fumee_noire_envahit": {"titre": "Fumée noire qui envahit (essai 1)", "texte": "Version moyenne, floue."},
- "G05_boule_fumee_lancee": {"titre": "Boules de fumée lancées", "texte": "Un lancer = un anneau de fumée qui roule. Pourrait remplacer les particules de la séquence 1."},
- "G06_lavis_deux_encres": {"titre": "Lavis : deux encres", "texte": "Deux couleurs d'encre qui se rencontrent."},
- "G07_nuee_du_chapeau": {"titre": "Particules : la nuée jaillit du chapeau", "texte": "Gerbe de particules depuis le chapeau posé au sol, puis enroulement en tourbillon."},
- "G08_filaments_vagues": {"titre": "Particules : filaments en vagues", "texte": "La « chevelure » qui ondule, comme à la fin de la vidéo particules."},
- "G09_essaim_suit_sa_main": {"titre": "Essaim qui suit la main", "texte": "La main est repérée sur l'ombre seule, ce qui reste peu fiable : en répétition, une petite LED sur la main rendrait le suivi précis."},
- "G10_silhouette_en_feu": {"titre": "La silhouette prend feu", "texte": "Feu et fumée depuis le contour de la vraie silhouette."},
- "G11_cape_de_fumee": {"titre": "Cape de fumée", "texte": "La fumée part des épaules et s'étale comme une cape."},
- "G12_fumee_noire_envahit_v2": {"titre": "Fumée noire qui envahit (essai 2)", "texte": "Plus détaillée, bords éclairés par le feu, braises."},
- "G13_fumee_orange_fond_jaune": {"titre": "Fumée orange sur fond jaune", "texte": "Le look de la séquence LED : volutes orange devant un fond clair, flammes basses."},
- "G14_grain_implosion_explosion": {"titre": "Particules : implosion / explosion (essai 1)", "texte": "Motifs trop géométriques, remplacé par l'essai 2."},
- "G14b_grain_implosion_explosion": {"titre": "Particules : grain, implosion, explosion", "texte": "Le grain coule comme une nuée, s'enroule en boule dans la main, puis explose en essaim."},
- "G15_echos_fantomes": {"titre": "Échos fantômes", "texte": "Les positions passées de l'ombre restent en gris et s'effacent."},
- "G16_lasers_des_LED": {"titre": "Lasers depuis les LED", "texte": "Faisceaux rouges qui partent des mains et balaient."},
- "G18_gouttes_encre": {"titre": "Gouttes d'encre", "texte": "Encre qui tombe et s'ouvre en champignons."},
- "G19_lasers_dans_la_fumee": {"titre": "Lasers dans la fumée", "texte": "La fumée de fond s'allume en rouge là où les lasers la traversent."},
- "G21_ombre_se_desintegre": {"titre": "L'ombre se désintègre", "texte": "Idée : l'artiste se cache, son ombre filmée reste à l'écran et part en fumée."},
- "G22_spectre_blanc": {"titre": "Spectre blanc", "texte": "Fumée blanche lumineuse depuis la silhouette, écran éteint."},
- "G23_ombre_couleurs": {"titre": "L'Ombre et les Couleurs", "texte": "Deux encres de couleur qui sortent de chaque côté de la silhouette."},
- "A_ombre_fumee": {"titre": "Premier essai : ombre → fumée"},
- "B_fumee_rouge_braises": {"titre": "Premier essai : fumée rouge et braises"},
- "C_anneau_fumee": {"titre": "Premier essai : anneau de fumée"},
- "D_particules": {"titre": "Premier essai : particules"},
- "E1_fumee_des_LED": {"titre": "Premier essai : fumée depuis les LED"},
- "E2_embrasement": {"titre": "Premier essai : embrasement"},
- "E3_fumee_noire_envahit": {"titre": "Premier essai : fumée noire qui envahit"},
- "E4_aura_ombre_geante": {"titre": "Premier essai : aura d'ombres"},
- "E5_fumee_monte_etincelles": {"titre": "Premier essai : fumée qui monte du sol"}
+ "best_of_pour_Yan": {
+  "titre": "Best of : 10 effets",
+  "texte": "Les essais les plus réussis à la suite."
+ },
+ "mini_scene_enchainee": {
+  "titre": "Mini scène enchaînée",
+  "texte": "Même passage filmé : fumée noire, feu, spectre blanc, couleurs, en fondus (chaque morceau repart du même instant de la prise)."
+ },
+ "G01_ombre_fumee_volume": {
+  "titre": "Ombre qui se transforme en fumée noire",
+  "texte": "Sur la vraie silhouette (vidéo source). La fumée sort du contour et suit les mouvements ; rien n'est projeté sur l'ombre elle-même."
+ },
+ "G02_feu_des_LED": {
+  "titre": "Feu qui sort des LED",
+  "texte": "Les LED rouges des gants sont repérées automatiquement dans la vidéo ; le feu et les braises partent des mains."
+ },
+ "G03_embrasement": {
+  "titre": "Embrasement",
+  "texte": "Flammes au sol, le fond s'allume, la fumée chaude monte."
+ },
+ "G04_fumee_noire_envahit": {
+  "titre": "Fumée noire qui envahit (essai 1)",
+  "texte": "Version moyenne, floue."
+ },
+ "G05_boule_fumee_lancee": {
+  "titre": "Boules de fumée lancées",
+  "texte": "Un lancer = un anneau de fumée qui roule. Pourrait remplacer les particules de la séquence 1."
+ },
+ "G06_lavis_deux_encres": {
+  "titre": "Lavis : deux encres",
+  "texte": "Deux couleurs d'encre qui se rencontrent."
+ },
+ "G07_nuee_du_chapeau": {
+  "titre": "Particules : la nuée jaillit du chapeau",
+  "texte": "Gerbe de particules depuis le chapeau posé au sol, puis enroulement en tourbillon."
+ },
+ "G08_filaments_vagues": {
+  "titre": "Particules : filaments en vagues",
+  "texte": "La « chevelure » qui ondule, comme à la fin de la vidéo particules."
+ },
+ "G09_essaim_suit_sa_main": {
+  "titre": "Essaim qui suit la main",
+  "texte": "La main est repérée sur l'ombre seule, ce qui reste peu fiable : en répétition, une petite LED sur la main rendrait le suivi précis."
+ },
+ "G10_silhouette_en_feu": {
+  "titre": "La silhouette prend feu",
+  "texte": "Feu et fumée depuis le contour de la vraie silhouette."
+ },
+ "G11_cape_de_fumee": {
+  "titre": "Cape de fumée",
+  "texte": "La fumée part des épaules et s'étale comme une cape."
+ },
+ "G12_fumee_noire_envahit_v2": {
+  "titre": "Fumée noire qui envahit (essai 2)",
+  "texte": "Plus détaillée, bords éclairés par le feu, braises."
+ },
+ "G13_fumee_orange_fond_jaune": {
+  "titre": "Fumée orange sur fond jaune",
+  "texte": "Le look de la séquence LED : volutes orange devant un fond clair, flammes basses."
+ },
+ "G14_grain_implosion_explosion": {
+  "titre": "Particules : implosion / explosion (essai 1)",
+  "texte": "Motifs trop géométriques, remplacé par l'essai 2."
+ },
+ "G14b_grain_implosion_explosion": {
+  "titre": "Particules : grain, implosion, explosion",
+  "texte": "Le grain coule comme une nuée, s'enroule en boule dans la main, puis explose en essaim."
+ },
+ "G15_echos_fantomes": {
+  "titre": "Échos fantômes",
+  "texte": "Les positions passées de l'ombre restent en gris et s'effacent."
+ },
+ "G16_lasers_des_LED": {
+  "titre": "Lasers depuis les LED",
+  "texte": "Faisceaux rouges qui partent des mains et balaient."
+ },
+ "G18_gouttes_encre": {
+  "titre": "Gouttes d'encre",
+  "texte": "Encre qui tombe et s'ouvre en champignons."
+ },
+ "G19_lasers_dans_la_fumee": {
+  "titre": "Lasers dans la fumée",
+  "texte": "La fumée de fond s'allume en rouge là où les lasers la traversent."
+ },
+ "G21_ombre_se_desintegre": {
+  "titre": "L'ombre se désintègre",
+  "texte": "Idée : l'artiste se cache, son ombre filmée reste à l'écran et part en fumée."
+ },
+ "G22_spectre_blanc": {
+  "titre": "Spectre blanc",
+  "texte": "Fumée blanche lumineuse depuis la silhouette, écran éteint."
+ },
+ "G23_ombre_couleurs": {
+  "titre": "L'Ombre et les Couleurs",
+  "texte": "Deux encres de couleur qui sortent de chaque côté de la silhouette."
+ },
+ "A_ombre_fumee": {
+  "titre": "Premier essai : ombre → fumée"
+ },
+ "B_fumee_rouge_braises": {
+  "titre": "Premier essai : fumée rouge et braises"
+ },
+ "C_anneau_fumee": {
+  "titre": "Premier essai : anneau de fumée"
+ },
+ "D_particules": {
+  "titre": "Premier essai : particules"
+ },
+ "E1_fumee_des_LED": {
+  "titre": "Premier essai : fumée depuis les LED"
+ },
+ "E2_embrasement": {
+  "titre": "Premier essai : embrasement"
+ },
+ "E3_fumee_noire_envahit": {
+  "titre": "Premier essai : fumée noire qui envahit"
+ },
+ "E4_aura_ombre_geante": {
+  "titre": "Premier essai : aura d'ombres"
+ },
+ "E5_fumee_monte_etincelles": {
+  "titre": "Premier essai : fumée qui monte du sol"
+ },
+ "H02_fumee_3d_blender": {
+  "titre": "Fumée en vraie 3D (simulation + rendu réaliste)",
+  "texte": "Nouvelle méthode pour se rapprocher de la qualité des exemples IA : simulation de fumée en volume et rendu photoréaliste, toujours gratuit et calculé sur le PC."
+ },
+ "H03_nappe_fumee_3d": {
+  "titre": "Nappe de fumée en 3D, plus lumineuse",
+  "texte": "Même méthode 3D réaliste : fumée large qui roule depuis le sol, éclairée par le haut."
+ }
 }
