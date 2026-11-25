@@ -14,6 +14,7 @@ SECTIONS = [
     ('Version 1 : premiers essais', sorted(glob.glob(os.path.join(T, 'rendus', '[A-E]*.mp4')))),
 ]
 EXCLURE = ('GPU_', 'tests_', 'best_of_tg')
+MASQUES = set(json.load(open(os.path.join(S, 'masques.json'), encoding='utf-8'))) if os.path.exists(os.path.join(S, 'masques.json')) else set()
 
 
 def web(src):
@@ -31,7 +32,7 @@ def page():
     for titre, fichiers in SECTIONS:
         cartes = []
         for f in fichiers:
-            if not os.path.exists(f) or os.path.basename(f).startswith(EXCLURE): continue
+            if not os.path.exists(f) or os.path.basename(f).startswith(EXCLURE) or os.path.splitext(os.path.basename(f))[0] in MASQUES: continue
             nom = web(f)
             d = DESC.get(nom, {})
             t, txt = d.get('titre', nom.replace('_', ' ')), d.get('texte', '')
