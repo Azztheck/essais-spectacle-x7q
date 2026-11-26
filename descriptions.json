@@ -165,5 +165,13 @@
  "V14B2_effets_seuls": {
   "titre": "Vidéo 14, segment continu 0-20 s v2 : effets seuls",
   "texte": "Vidéo 14, 0-20 s v2 : fond projeté + fumée rouge sombre translucide + flammes + étincelles, sans l'original ni Yan."
+ },
+ "V14A3_cote_a_cote": {
+  "titre": "Vidéo 14, plan 1 v3 (Blender, net) : original | notre version",
+  "texte": "Vidéo 14, 0-4 s en Blender (Mantaflow + Cycles) visant la netteté : domaine calé sur le tissu, jets poussés par un vent, flammes au sol (feu), shader opaque orange à bords nets, bloom. À gauche l'original, à droite notre version."
+ },
+ "V14A3_effets_seuls": {
+  "titre": "Vidéo 14, plan 1 v3 (Blender, net) : effets seuls",
+  "texte": "Vidéo 14, 0-4 s en Blender : fumée orange nette + flammes au sol sur noir, sans l'original."
  }
 }
