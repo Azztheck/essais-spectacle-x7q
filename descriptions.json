@@ -173,5 +173,21 @@
  "V14A3_effets_seuls": {
   "titre": "Vidéo 14, plan 1 v3 (Blender, net) : effets seuls",
   "texte": "Vidéo 14, 0-4 s en Blender : fumée orange nette + flammes au sol sur noir, sans l'original."
+ },
+ "V14C_cote_a_cote": {
+  "titre": "Vidéo 14, de 20 à 43,76 s (brouillon) : à côté de l'original",
+  "texte": "Toute la fin de la vidéo : la fumée noire qui arrive, le noir avec les étincelles, la coupe à 27,76 s, le fond clair avec les ombres en arc, la masse sombre, les étincelles rapides et la grosse fumée orange à droite. À gauche notre essai, à droite l'original."
+ },
+ "V14C_effets_seuls": {
+  "titre": "Vidéo 14, de 20 à 43,76 s (brouillon) : effets seuls",
+  "texte": "La fin de la vidéo 14 sans l'original. Les ombres en arc sont faites avec une forme de personnage approchée, pas avec la vraie silhouette."
+ },
+ "V14_complet_cote_a_cote": {
+  "titre": "Vidéo 14 complète (0 à 43,76 s) : à côté de l'original",
+  "texte": "Toute la vidéo 14 refaite en brouillon : début (essai B2) puis fin (essai C), collés à 20 s. À gauche notre essai, à droite l'original."
+ },
+ "V14_complet_effets_seuls": {
+  "titre": "Vidéo 14 complète (0 à 43,76 s) : effets seuls",
+  "texte": "Toute la vidéo 14 refaite en brouillon, effets seuls, sans l'original."
  }
 }
