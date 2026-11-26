@@ -9,7 +9,7 @@ DESC = json.load(open(os.path.join(S, 'descriptions.json'), encoding='utf-8'))
 # ordre d'affichage : sections → motifs de fichiers
 SECTIONS = [
     ('À voir en premier', [os.path.join(T, 'gpu', 'rendus', n) for n in ('best_of_pour_Yan.mp4', 'mini_scene_enchainee.mp4')]),
-    ('Version qualité (nouveaux essais)', sorted(glob.glob(os.path.join(T, 'gpu', 'rendus', 'H*.mp4')))),
+    ('Version qualité (nouveaux essais)', sorted(glob.glob(os.path.join(T, 'gpu', 'rendus', '[HV]*.mp4')))),
     ('Version 2 : carte graphique', sorted(glob.glob(os.path.join(T, 'gpu', 'rendus', 'G*.mp4')), key=lambda p: os.path.basename(p))),
     ('Version 1 : premiers essais', sorted(glob.glob(os.path.join(T, 'rendus', '[A-E]*.mp4')))),
 ]
