@@ -157,5 +157,13 @@
  "V14B_effets_seuls": {
   "titre": "Vidéo 14, segment continu 0-20 s : effets seuls",
   "texte": "Vidéo 14, 0-20 s d'un seul tenant (brouillon) : fond projeté + fumée + flammes + étincelles, sans l'original et sans la silhouette de Yan (qui sera réelle devant)."
+ },
+ "V14B2_cote_a_cote": {
+  "titre": "Vidéo 14, segment continu 0-20 s v2 : original | notre version",
+  "texte": "Vidéo 14, 0-20 s v2 : même simulation 2D, look corrigé. La fumée absorbe et teinte en rouge sombre translucide au lieu d'éclaircir, fond mesuré sur l'original (sombre puis jaune-blanc), flammes au sol jaune-blanc avec lueur, fumée sombre finale plus turbulente. À gauche l'original, à droite notre version (points rouges = LED, seulement sur les passages sombres où le suivi est fiable)."
+ },
+ "V14B2_effets_seuls": {
+  "titre": "Vidéo 14, segment continu 0-20 s v2 : effets seuls",
+  "texte": "Vidéo 14, 0-20 s v2 : fond projeté + fumée rouge sombre translucide + flammes + étincelles, sans l'original ni Yan."
  }
 }
