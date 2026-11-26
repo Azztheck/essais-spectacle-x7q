@@ -141,5 +141,13 @@
  "V14A_effets_seuls": {
   "titre": "Vidéo 14, plan 1 : effets seuls sur noir",
   "texte": "Vidéo 14, plan 1 (0-4 s) : notre fumée orange sans l'original, sur fond noir, telle qu'elle serait projetée."
+ },
+ "V14A2_cote_a_cote": {
+  "titre": "Vidéo 14, plan 1 v2 : original | notre version",
+  "texte": "Vidéo 14, plan 1 v2 (0-4 s) : refait avec un moteur de fumée 2D GPU (plus net que le Blender de la v1). Ce qui a changé : la fumée naît de la main (pas à droite), rouleaux nets et opaques orange vif avec cœur plus clair, flammes jaunes au sol à droite dès ~1 s, image calée sur la zone du tissu (bords noirs comme l'original). À gauche l'original, à droite notre version."
+ },
+ "V14A2_effets_seuls": {
+  "titre": "Vidéo 14, plan 1 v2 : effets seuls sur noir",
+  "texte": "Vidéo 14, plan 1 v2 (0-4 s) : fumée orange nette + flammes au sol, sans l'original, sur fond noir, calée sur la zone du tissu, telle qu'elle serait projetée."
  }
 }
