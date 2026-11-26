@@ -35,9 +35,13 @@ def page():
             nom = web(f)
             d = DESC.get(nom, {})
             t, txt = d.get('titre', nom.replace('_', ' ')), d.get('texte', '')
-            cartes.append(f'''<figure data-id="{nom}"><div class="poignee" aria-label="Déplacer">⠿</div>
+            cartes.append((os.path.getmtime(f), f'''<figure data-id="{nom}"><div class="poignee" aria-label="Déplacer">⠿</div>
 <video src="v/{nom}.mp4" poster="v/{nom}.jpg" controls loop muted playsinline preload="none"></video>
-<figcaption><b>{html.escape(t)}</b>{('<br>' + html.escape(txt)) if txt else ''}<span class="sec">{html.escape(titre)}</span></figcaption></figure>''')
+<figcaption><b>{html.escape(t)}</b>{('<br>' + html.escape(txt)) if txt else ''}<span class="sec">{html.escape(titre)}</span></figcaption></figure>'''))
+    vus = set(); tri = []
+    for m, c in sorted(cartes, key=lambda x: -x[0]):  # le plus récent en haut
+        if c not in vus: vus.add(c); tri.append(c)
+    cartes = tri
     maj = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
     doc = f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow"><title>Essais vidéo du spectacle</title>
