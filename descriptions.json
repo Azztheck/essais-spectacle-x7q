@@ -149,5 +149,13 @@
  "V14A2_effets_seuls": {
   "titre": "Vidéo 14, plan 1 v2 : effets seuls sur noir",
   "texte": "Vidéo 14, plan 1 v2 (0-4 s) : fumée orange nette + flammes au sol, sans l'original, sur fond noir, calée sur la zone du tissu, telle qu'elle serait projetée."
+ },
+ "V14B_cote_a_cote": {
+  "titre": "Vidéo 14, segment continu 0-20 s : original | notre version",
+  "texte": "Vidéo 14, 0-20 s d'un seul tenant (brouillon) : fond qui s'allume (rouge, orange, jaune-blanc), fumée orange depuis la main puis colonne au sol, flammes, étincelles, fumée sombre qui entre par la droite vers 19 s. À gauche l'original, à droite notre version (les points rouges = LED suivies, pour comparer)."
+ },
+ "V14B_effets_seuls": {
+  "titre": "Vidéo 14, segment continu 0-20 s : effets seuls",
+  "texte": "Vidéo 14, 0-20 s d'un seul tenant (brouillon) : fond projeté + fumée + flammes + étincelles, sans l'original et sans la silhouette de Yan (qui sera réelle devant)."
  }
 }
