@@ -129,5 +129,9 @@
  "H03_nappe_fumee_3d": {
   "titre": "Nappe de fumée en 3D, plus lumineuse",
   "texte": "Même méthode 3D réaliste : fumée large qui roule depuis le sol, éclairée par le haut."
+ },
+ "H04_ombre_fumee_3d": {
+  "titre": "Ombre → fumée en vraie 3D",
+  "texte": "Le contour de la silhouette filmée sert de source à une simulation de fumée en volume, posée ensuite sur la vidéo. Test de 5 secondes."
  }
 }
