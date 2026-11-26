@@ -28,33 +28,64 @@ def web(src):
 
 
 def page():
-    blocs = []
+    cartes = []
     for titre, fichiers in SECTIONS:
-        cartes = []
         for f in fichiers:
             if not os.path.exists(f) or os.path.basename(f).startswith(EXCLURE) or os.path.splitext(os.path.basename(f))[0] in MASQUES: continue
             nom = web(f)
             d = DESC.get(nom, {})
             t, txt = d.get('titre', nom.replace('_', ' ')), d.get('texte', '')
-            cartes.append(f'''<figure><video src="v/{nom}.mp4" poster="v/{nom}.jpg" controls loop muted playsinline preload="none"></video>
-<figcaption><b>{html.escape(t)}</b>{('<br>' + html.escape(txt)) if txt else ''}</figcaption></figure>''')
-        if cartes:
-            blocs.append(f'<h2>{html.escape(titre)}</h2><div class="grille">' + '\n'.join(cartes) + '</div>')
+            cartes.append(f'''<figure data-id="{nom}"><div class="poignee" aria-label="Déplacer">⠿</div>
+<video src="v/{nom}.mp4" poster="v/{nom}.jpg" controls loop muted playsinline preload="none"></video>
+<figcaption><b>{html.escape(t)}</b>{('<br>' + html.escape(txt)) if txt else ''}<span class="sec">{html.escape(titre)}</span></figcaption></figure>''')
     maj = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
     doc = f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow"><title>Essais vidéo du spectacle</title>
 <style>
 body{{margin:0;background:#0d0d0f;color:#e8e6e3;font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}}
-header{{padding:28px 20px 8px;max-width:1300px;margin:auto}} h1{{margin:0 0 6px;font-size:26px}} header p{{margin:4px 0;color:#aaa}}
-h2{{max-width:1300px;margin:34px auto 12px;padding:0 20px;font-size:20px;border-bottom:1px solid #333;padding-bottom:6px}}
-.grille{{max-width:1300px;margin:auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:18px}}
-figure{{margin:0;background:#17171a;border-radius:10px;overflow:hidden}} video{{width:100%;display:block;aspect-ratio:16/9;background:#000}}
-figcaption{{padding:10px 12px;font-size:14px;color:#cfcac4}} figcaption b{{color:#fff}}
+header{{padding:22px 16px 6px;max-width:1300px;margin:auto}} h1{{margin:0 0 6px;font-size:24px}} header p{{margin:4px 0;color:#aaa;font-size:14px}}
+.barre{{padding:6px 16px;display:flex;gap:8px;flex-wrap:wrap;max-width:1300px;margin:auto}}
+.barre button{{background:#26262b;color:#eee;border:1px solid #3a3a40;border-radius:16px;padding:6px 11px;font-size:13px}}
+#liste{{max-width:1300px;margin:auto;padding:6px 16px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}}
+figure{{margin:0;background:#17171a;border-radius:10px;overflow:hidden;position:relative}}
+video{{width:100%;display:block;aspect-ratio:16/9;background:#000}}
+.poignee{{position:absolute;top:6px;right:6px;z-index:3;width:46px;height:46px;border-radius:23px;background:#000a;color:#fff;font-size:26px;
+ display:flex;align-items:center;justify-content:center;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}}
+figcaption{{display:none;padding:10px 12px;font-size:14px;color:#cfcac4}} figcaption b{{color:#fff}}
+.sec{{display:block;margin-top:4px;font-size:12px;color:#888}}
+body.textes figcaption{{display:block}}
+.fantome{{opacity:.35}} .choisi{{outline:3px solid #e0a040}}
+#msg{{color:#e0a040;font-size:14px;align-self:center}}
 footer{{color:#777;font-size:13px;text-align:center;padding:30px}}
 </style></head><body><header><h1>Essais vidéo du spectacle</h1>
-<p>Tous les essais d'effets, faits en code (simulation de fumée, feu et particules) à partir des vidéos du spectacle. Rien n'est définitif : ce sont des tests pour choisir une direction.</p>
-<p>Mis à jour le {maj}. La page se complète au fur et à mesure.</p></header>
-{''.join(blocs)}<footer>Essais faits avec Claude</footer></body></html>'''
+<p>Tous les essais d'effets faits à partir des vidéos du spectacle. Ce sont des tests pour choisir une direction. Mis à jour le {maj}.</p>
+<p>Pour changer l'ordre : appuyer sur ⠿ et glisser.</p></header>
+<div class="barre"><button id="bt">Afficher les textes</button><button id="bp">Partager cet ordre</button><button id="br">Ordre d'origine</button><span id="msg"></span></div>
+<div id="liste">
+{chr(10).join(cartes)}
+</div><footer>Essais faits avec Claude</footer>
+<script src="sortable.min.js"></script>
+<script>
+const L = document.getElementById('liste'), K = 'ordre-essais';
+const ids = () => [...L.children].map(e => e.dataset.id);
+function appliquer(o) {{
+  const tous = ids(), connus = o.filter(i => tous.includes(i)), nouveaux = tous.filter(i => !o.includes(i));
+  nouveaux.concat(connus).forEach(i => L.appendChild(L.querySelector('[data-id="' + i + '"]')));
+}}
+const h = new URLSearchParams(location.hash.slice(1)).get('o');
+const o = h ? h.split(',') : JSON.parse(localStorage.getItem(K) || 'null');
+if (o) appliquer(o);
+function garder() {{ localStorage.setItem(K, JSON.stringify(ids())); history.replaceState(null, '', '#o=' + ids().join(',')); }}
+new Sortable(L, {{handle: '.poignee', forceFallback: true, fallbackTolerance: 3, scroll: true, scrollSensitivity: 90, scrollSpeed: 14, animation: 160, ghostClass: 'fantome', chosenClass: 'choisi', onEnd: garder}});
+const msg = t => {{ const m = document.getElementById('msg'); m.textContent = t; setTimeout(() => m.textContent = '', 2500); }};
+document.getElementById('bt').onclick = e => {{ const on = document.body.classList.toggle('textes'); e.target.textContent = on ? 'Cacher les textes' : 'Afficher les textes'; }};
+document.getElementById('bp').onclick = async () => {{
+  const u = location.origin + location.pathname + '#o=' + ids().join(',');
+  if (navigator.share) {{ try {{ await navigator.share({{title: 'Essais vidéo', url: u}}); }} catch (e) {{}} }}
+  else {{ await navigator.clipboard.writeText(u); msg('Lien copié'); }}
+}};
+document.getElementById('br').onclick = () => {{ localStorage.removeItem(K); location.href = location.pathname; }};
+</script></body></html>'''
     open(os.path.join(S, 'index.html'), 'w', encoding='utf-8').write(doc)
 
 
