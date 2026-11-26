@@ -133,5 +133,13 @@
  "H04_ombre_fumee_3d": {
   "titre": "Ombre → fumée en vraie 3D",
   "texte": "Le contour de la silhouette filmée sert de source à une simulation de fumée en volume, posée ensuite sur la vidéo. Test de 5 secondes."
+ },
+ "V14A_cote_a_cote": {
+  "titre": "Vidéo 14, plan 1 : original | notre version",
+  "texte": "Vidéo 14, plan 1 (0-4 s) : fumée orange qui jaillit des LED, refait en Blender. À gauche l'original, à droite notre version."
+ },
+ "V14A_effets_seuls": {
+  "titre": "Vidéo 14, plan 1 : effets seuls sur noir",
+  "texte": "Vidéo 14, plan 1 (0-4 s) : notre fumée orange sans l'original, sur fond noir, telle qu'elle serait projetée."
  }
 }
