@@ -233,5 +233,17 @@
  "MIX_scene1min_v8_effets_seuls": {
   "titre": "Scène feu + encre v8 (58 s) — la plus récente",
   "texte": "v7 corrigée : lave plus chaude, Yan espacés, plus de brun ni d'orange plat, entrée plus rapide dans le feu."
+ },
+ "MIX_coul_scene1min_v8_derive_effets_seuls": {
+  "titre": "Scène v8 — couleurs qui dérivent (feu, rose, bleu, vert, retour au feu)",
+  "texte": ""
+ },
+ "MIX_coul_scene1min_v8_toxique_effets_seuls": {
+  "titre": "Scène v8 — toxique (vert-cyan)",
+  "texte": ""
+ },
+ "MIX_coul_scene1min_v8_synthwave_effets_seuls": {
+  "titre": "Scène v8 — synthwave (violet-rose)",
+  "texte": ""
  }
 }
