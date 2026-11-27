@@ -189,5 +189,33 @@
  "V14_complet_effets_seuls": {
   "titre": "Vidéo 14 complète (0 à 43,76 s) : effets seuls",
   "texte": "Toute la vidéo 14 refaite en brouillon, effets seuls, sans l'original."
+ },
+ "MIX_scene1min_v6_effets_seuls": {
+  "titre": "Scène feu + encre v6 (53 s)",
+  "texte": "Jet dès le début, contre-jour, encre de lave, Yan fenêtre sur le feu, aura."
+ },
+ "MIX_couleurs_demo_effets_seuls": {
+  "titre": "Couleurs flashy (démo 26 s)",
+  "texte": "Lave vert/synthwave, Yan toxique/magenta, aura cyan/vert."
+ },
+ "V14M_aura_rouges_v36_effets_seuls": {
+  "titre": "Aura v36",
+  "texte": "Brume orange, Yan noir profond, paliers rouges légers."
+ },
+ "MIX_v6_yan_effets_seuls": {
+  "titre": "Yan fenêtre sur le feu",
+  "texte": ""
+ },
+ "MIX_v6_lave_effets_seuls": {
+  "titre": "Encre de lave",
+  "texte": ""
+ },
+ "MIX_v6_cj_effets_seuls": {
+  "titre": "Contre-jour Yan devant le feu",
+  "texte": ""
+ },
+ "MIX_scene1min_v5_effets_seuls": {
+  "titre": "Scène v5 (avant)",
+  "texte": "Pour comparer avec la v6."
  }
 }

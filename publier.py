@@ -7,13 +7,20 @@ T = os.path.join(S, '..', 'tests_code')
 DESC = json.load(open(os.path.join(S, 'descriptions.json'), encoding='utf-8'))
 
 # ordre d'affichage : sections → motifs de fichiers
+# Sélection feu + encre (27/11) : en haut, dans cet ordre ; les autres V14M_/MIX_ restent hors ligne
+SEL = ["MIX_scene1min_v6", "MIX_couleurs_demo", "V14M_aura_rouges_v36", "MIX_v6_yan", "MIX_v6_lave", "MIX_v6_cj",
+       "MIX_coul_yan_toxique", "MIX_coul_yan_magenta", "MIX_coul_aura_cyan_elec", "MIX_coul_aura_vert_acide",
+       "MIX_coul_lave_vert_acide", "MIX_coul_lave_synthwave", "MIX_encre_de_lave_v3", "MIX_feu_derriere_encre_v7",
+       "MIX_incandescente_mangee_encre_v7", "MIX_yan_de_feu_v1", "MIX_contrejour_yan_feu_v2", "V14M_jet_sansbord_a6", "MIX_scene1min_v5"]
+SELF = [os.path.join(T, 'gpu', 'rendus', *([] if n.startswith('V14M_') else ['mix']), n + '_effets_seuls.mp4') for n in SEL]
 SECTIONS = [
+    ('Feu + encre (27/11)', SELF),
     ('À voir en premier', [os.path.join(T, 'gpu', 'rendus', n) for n in ('best_of_pour_Yan.mp4', 'mini_scene_enchainee.mp4')]),
     ('Version qualité (nouveaux essais)', sorted(glob.glob(os.path.join(T, 'gpu', 'rendus', '[HV]*.mp4')))),
     ('Version 2 : carte graphique', sorted(glob.glob(os.path.join(T, 'gpu', 'rendus', 'G*.mp4')), key=lambda p: os.path.basename(p))),
     ('Version 1 : premiers essais', sorted(glob.glob(os.path.join(T, 'rendus', '[A-E]*.mp4')))),
 ]
-EXCLURE = ('GPU_', 'tests_', 'best_of_tg')
+EXCLURE = ('GPU_', 'tests_', 'best_of_tg', 'V14M_', 'MIX_')
 MASQUES = set(json.load(open(os.path.join(S, 'masques.json'), encoding='utf-8'))) if os.path.exists(os.path.join(S, 'masques.json')) else set()
 
 
@@ -31,11 +38,11 @@ def page():
     cartes = []
     for titre, fichiers in SECTIONS:
         for f in fichiers:
-            if not os.path.exists(f) or os.path.basename(f).startswith(EXCLURE) or os.path.splitext(os.path.basename(f))[0] in MASQUES: continue
+            if not os.path.exists(f) or (f not in SELF and (os.path.basename(f).startswith(EXCLURE) or not os.path.exists(os.path.join(V, os.path.basename(f))))) or os.path.splitext(os.path.basename(f))[0] in MASQUES: continue
             nom = web(f)
             d = DESC.get(nom, {})
             t, txt = d.get('titre', nom.replace('_', ' ')), d.get('texte', '')
-            cartes.append((os.path.getmtime(f), f'''<figure data-id="{nom}"><div class="poignee" aria-label="Déplacer">⠿</div>
+            cartes.append((1e12 - SELF.index(f) if f in SELF else os.path.getmtime(f), f'''<figure data-id="{nom}"><div class="poignee" aria-label="Déplacer">⠿</div>
 <video src="v/{nom}.mp4" poster="v/{nom}.jpg" controls loop muted playsinline preload="none"></video>
 <figcaption><b>{html.escape(t)}</b>{('<br>' + html.escape(txt)) if txt else ''}<span class="sec">{html.escape(titre)}</span></figcaption></figure>'''))
     vus = set(); tri = []
