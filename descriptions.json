@@ -231,7 +231,7 @@
   "texte": ""
  },
  "MIX_scene1min_v8_effets_seuls": {
-  "titre": "Scène feu + encre v8 (58 s) — la plus récente",
+  "titre": "Scène feu + encre v8 (58 s)",
   "texte": "v7 corrigée : lave plus chaude, Yan espacés, plus de brun ni d'orange plat, entrée plus rapide dans le feu."
  },
  "MIX_coul_scene1min_v8_derive_effets_seuls": {
@@ -244,6 +244,18 @@
  },
  "MIX_coul_scene1min_v8_synthwave_effets_seuls": {
   "titre": "Scène v8 — synthwave (violet-rose)",
+  "texte": ""
+ },
+ "MIX_scene1min_v9_effets_seuls": {
+  "titre": "Scène feu + encre v9 (60 s) — la plus récente",
+  "texte": "Jet d'ouverture en vraies flammes, encre à liseré de lave à 41 s au lieu de la masse noire."
+ },
+ "MIX_jet_feu_v9b_clair_effets_seuls": {
+  "titre": "Jet de feu v9",
+  "texte": ""
+ },
+ "MIX_incandescente_lave_v9_effets_seuls": {
+  "titre": "Feu + encre à liseré de lave v9",
   "texte": ""
  }
 }
