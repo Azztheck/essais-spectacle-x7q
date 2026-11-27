@@ -217,5 +217,17 @@
  "MIX_scene1min_v5_effets_seuls": {
   "titre": "Scène v5 (avant)",
   "texte": "Pour comparer avec la v6."
+ },
+ "MIX_scene1min_v7_effets_seuls": {
+  "titre": "Scène feu + encre v7 (61 s) — la plus récente",
+  "texte": "Nouveaux rendus : contre-jour plein cadre, encre de lave qui avale le feu, aura v36, fin contre-jour + lave."
+ },
+ "MIX_encre_de_lave_v4_effets_seuls": {
+  "titre": "Encre de lave v4 (11 s)",
+  "texte": ""
+ },
+ "MIX_fin_lave_v1_effets_seuls": {
+  "titre": "Fin : contre-jour puis la lave avale tout",
+  "texte": ""
  }
 }

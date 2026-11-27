@@ -8,7 +8,7 @@ DESC = json.load(open(os.path.join(S, 'descriptions.json'), encoding='utf-8'))
 
 # ordre d'affichage : sections → motifs de fichiers
 # Sélection feu + encre (27/11) : en haut, dans cet ordre ; les autres V14M_/MIX_ restent hors ligne
-SEL = ["MIX_scene1min_v6", "MIX_couleurs_demo", "V14M_aura_rouges_v36", "MIX_v6_yan", "MIX_v6_lave", "MIX_v6_cj",
+SEL = ["MIX_scene1min_v7", "MIX_encre_de_lave_v4", "MIX_fin_lave_v1", "MIX_scene1min_v6", "MIX_couleurs_demo", "V14M_aura_rouges_v36", "MIX_v6_yan", "MIX_v6_lave", "MIX_v6_cj",
        "MIX_coul_yan_toxique", "MIX_coul_yan_magenta", "MIX_coul_aura_cyan_elec", "MIX_coul_aura_vert_acide",
        "MIX_coul_lave_vert_acide", "MIX_coul_lave_synthwave", "MIX_encre_de_lave_v3", "MIX_feu_derriere_encre_v7",
        "MIX_incandescente_mangee_encre_v7", "MIX_yan_de_feu_v1", "MIX_contrejour_yan_feu_v2", "V14M_jet_sansbord_a6", "MIX_scene1min_v5"]
