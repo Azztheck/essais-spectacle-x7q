@@ -8,7 +8,7 @@ DESC = json.load(open(os.path.join(S, 'descriptions.json'), encoding='utf-8'))
 
 # ordre d'affichage : sections → motifs de fichiers
 # Sélection feu + encre (27/11) : en haut, dans cet ordre ; les autres V14M_/MIX_ restent hors ligne
-SEL = ["MIX_scene1min_v10", "MIX_scene1min_v9", "MIX_jet_feu_v9b_clair", "MIX_incandescente_lave_v9", "MIX_scene1min_v8", "MIX_coul_scene1min_v8_derive", "MIX_coul_scene1min_v8_toxique", "MIX_coul_scene1min_v8_synthwave", "MIX_scene1min_v7", "MIX_encre_de_lave_v4", "MIX_fin_lave_v1", "MIX_scene1min_v6", "MIX_couleurs_demo", "V14M_aura_rouges_v36", "MIX_v6_yan", "MIX_v6_lave", "MIX_v6_cj",
+SEL = ["MIX_q4_01_jet", "MIX_q4_02_libre", "MIX_q4_03_cj", "MIX_q4_04_pan", "MIX_q4_05_lave1", "MIX_q4_06_feu_encre", "MIX_q4_07_lave2", "MIX_q4_08_rouge", "MIX_q4_09_yanf", "MIX_q4_10_lave_feu", "MIX_q4_11_avale", "MIX_q4_12_aura", "MIX_q4_13_fin", "MIX_q4_14_derive", "MIX_q4_15_toxique", "MIX_q4_16_synth", "MIX_scene1min_v10", "MIX_scene1min_v9", "MIX_jet_feu_v9b_clair", "MIX_incandescente_lave_v9", "MIX_scene1min_v8", "MIX_coul_scene1min_v8_derive", "MIX_coul_scene1min_v8_toxique", "MIX_coul_scene1min_v8_synthwave", "MIX_scene1min_v7", "MIX_encre_de_lave_v4", "MIX_fin_lave_v1", "MIX_scene1min_v6", "MIX_couleurs_demo", "V14M_aura_rouges_v36", "MIX_v6_yan", "MIX_v6_lave", "MIX_v6_cj",
        "MIX_coul_yan_toxique", "MIX_coul_yan_magenta", "MIX_coul_aura_cyan_elec", "MIX_coul_aura_vert_acide",
        "MIX_coul_lave_vert_acide", "MIX_coul_lave_synthwave", "MIX_encre_de_lave_v3", "MIX_feu_derriere_encre_v7",
        "MIX_incandescente_mangee_encre_v7", "MIX_yan_de_feu_v1", "MIX_contrejour_yan_feu_v2", "V14M_jet_sansbord_a6", "MIX_scene1min_v5"]

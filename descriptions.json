@@ -261,5 +261,69 @@
  "MIX_scene1min_v10_effets_seuls": {
   "titre": "Scène feu + encre v10 (56 s) — la plus récente",
   "texte": "Finitions de la v9 : jet lumineux dès la 1re image, raccords plus fluides, plus de ligne parasite."
+ },
+ "MIX_q4_01_jet_effets_seuls": {
+  "titre": "Quiz 1. Ouverture : le jet en vraies flammes",
+  "texte": ""
+ },
+ "MIX_q4_02_libre_effets_seuls": {
+  "titre": "Quiz 2. L'encre noire qui envahit le feu",
+  "texte": ""
+ },
+ "MIX_q4_03_cj_effets_seuls": {
+  "titre": "Quiz 3. Yan en contre-jour dans l'anneau de feu",
+  "texte": ""
+ },
+ "MIX_q4_04_pan_effets_seuls": {
+  "titre": "Quiz 4. Les panaches d'encre qui montent",
+  "texte": ""
+ },
+ "MIX_q4_05_lave1_effets_seuls": {
+  "titre": "Quiz 5. Les lignes de lave sur noir",
+  "texte": ""
+ },
+ "MIX_q4_06_feu_encre_effets_seuls": {
+  "titre": "Quiz 6. Flammes + encre de lave",
+  "texte": ""
+ },
+ "MIX_q4_07_lave2_effets_seuls": {
+  "titre": "Quiz 7. La lave qui ondule sur noir",
+  "texte": ""
+ },
+ "MIX_q4_08_rouge_effets_seuls": {
+  "titre": "Quiz 8. L'encre rouge sang",
+  "texte": ""
+ },
+ "MIX_q4_09_yanf_effets_seuls": {
+  "titre": "Quiz 9. Yan = fenêtre sur le feu",
+  "texte": ""
+ },
+ "MIX_q4_10_lave_feu_effets_seuls": {
+  "titre": "Quiz 10. La lave dans le feu",
+  "texte": ""
+ },
+ "MIX_q4_11_avale_effets_seuls": {
+  "titre": "Quiz 11. L'encre noire qui avale le feu",
+  "texte": ""
+ },
+ "MIX_q4_12_aura_effets_seuls": {
+  "titre": "Quiz 12. L'aura (Yan dans la brume)",
+  "texte": ""
+ },
+ "MIX_q4_13_fin_effets_seuls": {
+  "titre": "Quiz 13. Fin : la lave avale tout",
+  "texte": ""
+ },
+ "MIX_q4_14_derive_effets_seuls": {
+  "titre": "Quiz 14. Couleur qui dérive (rose)",
+  "texte": ""
+ },
+ "MIX_q4_15_toxique_effets_seuls": {
+  "titre": "Quiz 15. Couleur toxique (vert)",
+  "texte": ""
+ },
+ "MIX_q4_16_synth_effets_seuls": {
+  "titre": "Quiz 16. Couleur synthwave",
+  "texte": ""
  }
 }
