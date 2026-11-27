@@ -247,7 +247,7 @@
   "texte": ""
  },
  "MIX_scene1min_v9_effets_seuls": {
-  "titre": "Scène feu + encre v9 (60 s) — la plus récente",
+  "titre": "Scène feu + encre v9 (60 s)",
   "texte": "Jet d'ouverture en vraies flammes, encre à liseré de lave à 41 s au lieu de la masse noire."
  },
  "MIX_jet_feu_v9b_clair_effets_seuls": {
@@ -257,5 +257,9 @@
  "MIX_incandescente_lave_v9_effets_seuls": {
   "titre": "Feu + encre à liseré de lave v9",
   "texte": ""
+ },
+ "MIX_scene1min_v10_effets_seuls": {
+  "titre": "Scène feu + encre v10 (56 s) — la plus récente",
+  "texte": "Finitions de la v9 : jet lumineux dès la 1re image, raccords plus fluides, plus de ligne parasite."
  }
 }
